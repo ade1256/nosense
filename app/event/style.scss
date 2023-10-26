@@ -1,0 +1,11 @@
+.event-wrapper {
+    padding-top: 55px;
+    display: flex;
+    @apply px-[85px];
+    .items {
+        flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+    }
+}

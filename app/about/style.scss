@@ -1,0 +1,32 @@
+.archives {
+  position: relative;
+  padding-top: 32px;
+  h3 {
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 600;
+  }
+  .gallery {
+    padding-top: 76px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 38px;
+    justify-content: center;
+    .photo {
+      width: 394px;
+      height: 395px;
+      border-radius: 12px;
+      cursor: pointer;
+      img {
+        width: inherit;
+        height: inherit;
+        border-radius: 12px;
+        filter: grayscale(1);
+      }
+    }
+  }
+}

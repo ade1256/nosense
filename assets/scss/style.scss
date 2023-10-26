@@ -11,6 +11,9 @@
   font-family: "Plus Jakarta Sans Bold";
   src: url("../fonts/PlusJakartaSans-Bold.ttf");
 }
+a {
+  cursor: pointer;
+}
 
 b {
     font-family: "Plus Jakarta Sans Bold";
@@ -229,14 +232,15 @@ b {
     padding: 60px 0px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 33px;
     .event-item {
-      padding: 45px 72px;
+      padding: 30px 50px;
       display: flex;
       align-items: center;
-      background: #1e1e1e;
+      border-radius: 100px;
+      border: 1px solid #888;
       &.active {
-        background: #b40707;
+        border: 1px solid #fff;
       }
       &:hover {
         cursor: pointer;
@@ -246,21 +250,26 @@ b {
       font-family: "Plus Jakarta Sans";
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 28px;
       color: #fff;
       width: 60%;
+      padding-right: 18px;
+      text-align: right;
     }
     .title {
+      width: 60%;
       h4 {
         font-family: "Plus Jakarta Sans";
         font-style: normal;
         font-weight: 400;
-        font-size: 34px;
+        font-size: 24px;
         line-height: 40px;
         color: #fff;
       }
-      width: 40%;
+    }
+    .button {
+      width: 111px;
     }
   }
   

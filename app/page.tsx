@@ -4,8 +4,10 @@ import ImgLogoNosense from "../assets/images/logo-nosense.svg";
 import ImgText1 from "../assets/images/text1.svg";
 import ImgArrowLeft from "../assets/images/arrow-left.svg";
 import Footer from "@/components/Footer";
+import { useRouter } from "next/navigation";
 
 const HomePage = () => {
+  const router = useRouter()
   return (
     <div className="">
       <div className="header">
@@ -15,10 +17,10 @@ const HomePage = () => {
         <div className="menu">
           <ul>
             <li>
-              <a href="locus.html">Locus Stream</a>
-              <a href="event.html">Event</a>
-              <a href="merch.html">Merch</a>
-              <a href="about.html">About</a>
+              <a href="locus">Locus Stream</a>
+              <a href="event">Event</a>
+              <a href="merch">Merch</a>
+              <a href="about">About</a>
             </li>
           </ul>
         </div>

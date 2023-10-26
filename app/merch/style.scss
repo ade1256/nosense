@@ -1,0 +1,68 @@
+.products-merch {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  .product {
+    position: relative;
+    width: 270px;
+    cursor: pointer;
+    .image {
+      position: relative;
+      .front {
+        visibility: visible;
+      }
+      .back {
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+      }
+      &:hover {
+        .back {
+          visibility: visible;
+        }
+        .front {
+          visibility: hidden;
+        }
+      }
+    }
+    .details {
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+      margin-top: 38px;
+      .title {
+        color: #fff;
+        text-align: center;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .price {
+        color: #fff;
+        font-family: "Plus Jakarta Sans Bold";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+      }
+      .size {
+        color: #d1d1d1;
+        text-align: center;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+      }
+    }
+  }
+}
