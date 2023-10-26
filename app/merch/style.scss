@@ -66,3 +66,26 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+  .products-merch {
+    padding-top: 48px;
+    padding-bottom: 80px;
+    justify-content: center;
+    .product {
+      width: 160px;
+      .details {
+        margin-top: 24px;
+        .size {
+          font-size: 12px;
+        }
+        .price {
+          font-size: 14px;
+        }
+        .title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

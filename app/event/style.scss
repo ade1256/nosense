@@ -1,11 +1,35 @@
 .event-wrapper {
-    padding-top: 55px;
-    display: flex;
-    @apply px-[85px];
-    .items {
-        flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
+  padding-top: 55px;
+  display: flex;
+  @apply px-[85px];
+  .items {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+    .event-wrapper {
+        flex-direction: column;
+        padding: 0px 16px;
+        padding-top: 40px;
+    }
+    .event-list {
+        .event-item {
+            padding: 16px 32px;
+        gap: 8px;
+        }
+        .title {
+            h4 {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .desc {
+            font-size: 12px;
+            line-height: 18px;
+        }
     }
 }

@@ -1,15 +1,19 @@
-"use client"
+"use client";
 
 import ImgLogoNosense from "../assets/images/logo-nosense.svg";
 import ImgText1 from "../assets/images/text1.svg";
 import ImgArrowLeft from "../assets/images/arrow-left.svg";
 import Footer from "@/components/Footer";
 import { useRouter } from "next/navigation";
+import ImgLocusVector from "@/assets/images/locus_vector.png";
+import ImgInstagram from "@/assets/images/instagram.png";
+import ImgSoundcloud from "@/assets/images/soundcloud.png";
+import ImgYoutube from "@/assets/images/youtube.png";
 
 const HomePage = () => {
-  const router = useRouter()
+  const router = useRouter();
   return (
-    <div className="">
+    <>
       <div className="header">
         <div className="logo">
           <img src={ImgLogoNosense.src} alt="logo-nosense" />
@@ -28,6 +32,17 @@ const HomePage = () => {
 
       <div className="home-content">
         <div className="background"></div>
+        <button
+          className="button"
+          onClick={() =>
+            (window.location.href = "https://www.instagram.com/locus_____std/")
+          }
+        >
+          <span>
+            <img src={ImgLocusVector.src} alt="locus-logo" />
+          </span>
+          LOCUS STUDIO
+        </button>
       </div>
 
       <div className="about">
@@ -42,15 +57,40 @@ const HomePage = () => {
         <div className="mt-10">
           <img src={ImgText1.src} alt="text illustrator" />
         </div>
-        <div className="mt-32">
+        <div className="mt-32" onClick={() => router.push("/about")}>
           <a href="#" className="button">
             <img src={ImgArrowLeft.src} className="icon" />
           </a>
         </div>
       </div>
 
+      <div className="sosmed-group">
+        <div className="social-media"  onClick={() =>
+            (window.location.href = "https://www.instagram.com/locus_____std/")
+          }>
+          <span>
+            <img src={ImgInstagram.src} alt="locus-logo" />
+          </span>
+          INSTAGRAM
+        </div>
+        <div className="social-media"  onClick={() =>
+            (window.location.href = "")
+          }>
+          <span>
+            <img src={ImgSoundcloud.src} alt="locus-logo" />
+          </span>
+        </div>
+        <div className="social-media"  onClick={() =>
+            (window.location.href = "https://www.youtube.com/@locusstream")
+          }>
+          <span>
+            <img src={ImgYoutube.src} alt="locus-logo" />
+          </span>
+        </div>
+      </div>
+
       <Footer />
-    </div>
+    </>
   );
 };
 

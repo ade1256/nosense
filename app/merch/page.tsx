@@ -35,7 +35,7 @@ const MerchPage = () => {
       imgFront: ImgTshirt3Front.src,
       imgBack: ImgTshirt3Back.src,
       link: "https://www.instagram.com/nosense_______cltv/",
-    }
+    },
   ];
   return (
     <>
@@ -43,7 +43,10 @@ const MerchPage = () => {
       <div className="content">
         <div className="products-merch">
           {products.map((product: any, key: number) => (
-            <div className="product" key={key} onClick={() => window.location.href = product.link}>
+            <div
+              className="product"
+              key={key}
+            >
               <div className="image">
                 <img
                   src={product.imgFront}
@@ -56,7 +59,7 @@ const MerchPage = () => {
                   className="back"
                 />
               </div>
-              <div className="details">
+              <div className="details" onClick={() => (window.location.href = product.link)}>
                 <div className="title">{product.name}</div>
                 <div className="price">{rupiah(product.price)}</div>
                 <div className="size">
