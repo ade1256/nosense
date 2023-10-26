@@ -1,0 +1,36 @@
+.footer {
+    padding: 0px 292px;
+    padding-top: 100px;
+    .input-wrapper {
+        position: relative;
+        input {
+            background: none;
+            padding: 26px 55px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            width: 855px;
+            &:focus {
+                color: #fff;
+            }
+        }
+        button {
+            position: absolute;
+            padding: 26px 80px;
+            color: #fff;
+            background: #B40707;
+            border-radius: 50px;
+            right: 73px;
+            border: 1px solid #fff;
+        }
+    }
+    .copyright {
+        position: relative;
+        width: 100%;
+        padding-top: 125px;
+        padding-bottom: 42px;
+        text-align: center;
+        p {
+            color: #fff;
+        }
+    }
+}

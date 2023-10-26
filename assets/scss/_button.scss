@@ -1,0 +1,13 @@
+.btn {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    &.link {
+        font-weight: 800;
+        font-size: 18px;
+    }
+
+    &.primary {
+        color: #B40707;
+    }
+}

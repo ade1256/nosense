@@ -1,0 +1,512 @@
+@import "grid";
+@import "button";
+@import "footer";
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans Bold";
+  src: url("../fonts/PlusJakartaSans-Bold.ttf");
+}
+
+b {
+    font-family: "Plus Jakarta Sans Bold";
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: "Plus Jakarta Sans";
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 149%;
+  }
+  
+  .header {
+    position: relative;
+    text-align: center;
+    padding-bottom: 80px;
+    .logo {
+      position: relative;
+      margin-top: 54px;
+      margin-bottom: 15px;
+      img {
+        margin: 0 auto;
+      }
+    }
+    .menu {
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      ul li {
+        display: flex;
+        gap: 54px;
+        justify-content: center;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  
+  .content {
+    position: relative;
+    padding: 0px 60px;
+  }
+  
+  .home-content {
+    position: relative;
+    width: 100%;
+    height: 578px;
+    .background {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/background.png");
+      background-size: 100%;
+    }
+  }
+  
+  .button-radio {
+    position: absolute;
+    width: 884px;
+    height: 57px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  
+  .player {
+    position: absolute;
+    width: 884px;
+    height: 57px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    iframe {
+      width: 100%;
+      height: 130px;
+    }
+  }
+  
+  .button {
+    display: block;
+    // padding: 16px 18px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    width: 165px;
+    height: 57px;
+    position: relative;
+    margin: 0 auto;
+    .icon {
+      position: absolute;
+      right: 16px;
+      top: 30%;
+    }
+  }
+  
+  .navbar {
+    position: relative;
+    padding: 0px 82px;
+    background-color: #000;
+    .navbar-content {
+      padding: 34px 0px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #fff;
+    }
+    .menu {
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 54px;
+        justify-content: center;
+      }
+      ul li {
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  
+  .locus {
+    position: relative;
+    content: "";
+    display: block;
+    background-image: url("../images/circle.png");
+    background-repeat: no-repeat;
+    padding: 62px 82px;
+    background-position: 8% 0%;
+    min-height: 882px;
+    .desc {
+      color: #fff;
+      text-align: right;
+      .btn {
+        display: inline;
+      }
+    }
+  }
+  
+  .slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 1288px;
+    left: 11%;
+  
+    .slider-images {
+      display: flex;
+      transition: transform 0.3s ease;
+      gap: 44px;
+    }
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+  
+    button {
+      display: block;
+      border-radius: 50px;
+      border: 2px solid #fff;
+      width: 104px;
+      height: 57px;
+      position: relative;
+      left: 10%;
+      cursor: pointer;
+      .icon {
+        position: absolute;
+        top: 30%;
+      }
+      &.slider-prev .icon {
+        left: 16px;
+      }
+      &.slider-next .icon {
+        right: 16px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  
+  .event-list {
+    position: relative;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .event-item {
+      padding: 45px 72px;
+      display: flex;
+      align-items: center;
+      background: #1e1e1e;
+      &.active {
+        background: #b40707;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .desc {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #fff;
+      width: 60%;
+    }
+    .title {
+      h4 {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 40px;
+        color: #fff;
+      }
+      width: 40%;
+    }
+  }
+  
+  .products {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 127px;
+    color: #fff;
+    justify-content: center;
+    margin-top: 130px;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .product-item {
+      &:hover {
+        cursor: pointer;
+      }
+      .image {
+        border-radius: 12px;
+      }
+      .name {
+        margin-top: 32px;
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+      }
+      .price {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+  }
+  
+  .about-image {
+    margin-top: 20px;
+  }
+  
+  .about-desc {
+    color: #fff;
+    margin-top: 80px;
+    padding: 0 24px;
+    padding-bottom: 80px;
+    p {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 200;
+      font-size: 18px;
+      line-height: 149%;
+      text-align: center;
+    }
+  }
+  
+  
+  /* Extra Small Devices (portrait phones, less than 576px) */
+  @media (max-width: 1119px) {
+    /* CSS rules for extra small devices */
+    ul li a {
+      font-size: 18px !important;
+    }
+    .header {
+      padding-bottom: 36px;
+      .menu ul li {
+        display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-direction: column;
+      }
+    }
+    .player {
+      width: 90%;
+      top: 30%;
+    }
+  
+    .footer {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: normal;
+      justify-content: normal;
+      gap: 16px;
+      .column {
+        display: block;
+        text-align: center;
+        border: none;
+        .brand {
+          width: auto;
+          height: 80px;
+        }
+      }
+    }
+    .home-content {
+      height: 300px;
+      .background {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+    }
+  
+    .navbar .navbar-content {
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .navbar .menu ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .navbar {
+      padding: 0px 24px;
+    }
+  
+    .content {
+      padding: 0px 24px;
+    }
+  
+    .event-list {
+      .event-item {
+        padding: 8px 16px;
+        gap: 16px;
+      }
+      .title h4 {
+        font-size: 18px;
+        line-height: 32px;
+      }
+      .desc {
+        font-size: 14px;
+      }
+      .button {
+        width: 60px;
+        height: 30px;
+        .icon {
+          height: 14px;
+          right: 12px;
+        }
+      }
+    }
+  
+    .products {
+      gap: 24px;
+      margin-top: 48px;
+      position: relative;
+      flex-wrap: wrap;
+      flex-direction: column;
+      .product-item {
+        position: relative;
+        width: 100%;
+        .image {
+          width: 100%;
+          img {
+            width: inherit;
+          }
+        }
+        .name, .price {
+          font-size: 24px;
+        }
+        .name {
+          margin-top: 16px;
+        }
+      }
+    }
+  
+    .about-image {
+      width: 100%;
+      img {
+        width: inherit;
+      }
+    }
+  
+    .about-desc {
+      margin-top: 24px;
+    }
+  
+    .locus {
+      background-size: 119px;
+      padding: 0px 24px;
+      background-position: 10px 10px;
+      .desc {
+        text-align: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  
+    .slider {
+      left: 0;
+      .slider-images {
+        gap: 16px;
+        img {
+          width: 200px;
+        }
+      }
+    }
+  
+    .slider-controls {
+      bottom: 274px;
+      left: 48px;
+      width: auto;
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  
+  }
+
+  .about {
+    padding-top: 110px;
+    color: #fff;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    padding-left: 292px;
+    padding-right: 292px;
+  }
+  
+  /* Small Devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS rules for small devices */
+  }
+  
+  /* Medium Devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for medium devices */
+  }
+  
+  /* Large Devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS rules for large devices */
+  }
+  
+  /* Extra Large Devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    /* CSS rules for extra large devices */
+  }
+  
+  
