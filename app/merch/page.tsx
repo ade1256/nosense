@@ -8,6 +8,7 @@ import ImgTshirt2Front from "@/assets/images/merch/tshirt2_front.png";
 import ImgTshirt2Back from "@/assets/images/merch/tshirt2_back.png";
 import ImgTshirt3Front from "@/assets/images/merch/tshirt3_front.png";
 import ImgTshirt3Back from "@/assets/images/merch/tshirt3_back.png";
+import ImgTshirt4Front from "@/assets/images/merch/tshirt4_front.png";
 import { rupiah } from "@/utils/utils";
 
 const MerchPage = () => {
@@ -34,6 +35,14 @@ const MerchPage = () => {
       sizes: ["X", "XL", "XXL"],
       imgFront: ImgTshirt3Front.src,
       imgBack: ImgTshirt3Back.src,
+      link: "https://www.instagram.com/nosense_______cltv/",
+    },
+    {
+      name: "Nosense Listen to The Defening Silence Long Slive White",
+      price: 225000,
+      sizes: ["M", "X", "XL", "XXL"],
+      imgFront: ImgTshirt4Front.src,
+      imgBack: ImgTshirt4Front.src,
       link: "https://www.instagram.com/nosense_______cltv/",
     },
   ];
