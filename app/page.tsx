@@ -15,16 +15,16 @@ const HomePage = () => {
   return (
     <>
       <div className="header">
-        <div className="logo">
+        <div className="logo" onClick={() => router.push("/")}>
           <img src={ImgLogoNosense.src} alt="logo-nosense" />
         </div>
         <div className="menu">
           <ul>
             <li>
-              <a href="locus">Locus Stream</a>
-              <a href="event">Event</a>
-              <a href="merch">Merch</a>
-              <a href="about">About</a>
+              <a onClick={() => router.push("/locus")}>Locus Stream</a>
+              <a onClick={() => router.push("/event")}>Event</a>
+              <a onClick={() => router.push("/merch")}>Merch</a>
+              <a onClick={() => router.push("/about")}>About</a>
             </li>
           </ul>
         </div>
