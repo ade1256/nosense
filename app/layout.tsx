@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import '../assets/scss/tailwind.scss'
 import '../assets/scss/style.scss'
 import ImgFavicon from "./favicon.svg"
+import Player from '@/components/Player'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="shortcut icon" href={ImgFavicon.src} />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Player />
+        {children}</body>
     </html>
   )
 }

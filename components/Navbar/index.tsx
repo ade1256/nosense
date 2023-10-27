@@ -4,7 +4,8 @@ import { useRouter } from "next/navigation";
 const Navbar = () => {
   const router = useRouter()
   return (
-    <div className="navbar">
+   <>
+     <div className="navbar">
       <div className="navbar-content">
         <div className="logo">
           <a onClick={() => router.push("/")}>
@@ -35,6 +36,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+   </>
   );
 };
 
