@@ -13,38 +13,38 @@ import { rupiah } from "@/utils/utils";
 
 const MerchPage = () => {
   const products = [
+    // {
+    //   name: "Nosense Listen to The Defening Silence Tee Blue",
+    //   price: 185000,
+    //   sizes: ["X", "XL", "XXL"],
+    //   imgFront: ImgTshirt1Front.src,
+    //   imgBack: ImgTshirt1Back.src,
+    //   link: "https://www.instagram.com/nosense_______cltv/",
+    // },
     {
-      name: "Nosense Listen to The Defening Silence Tee Blue",
-      price: 185000,
-      sizes: ["X", "XL", "XXL"],
-      imgFront: ImgTshirt1Front.src,
-      imgBack: ImgTshirt1Back.src,
-      link: "https://www.instagram.com/nosense_______cltv/",
-    },
-    {
-      name: "Nosense Tee Black",
-      price: 185000,
-      sizes: ["X", "XL", "XXL"],
+      name: "Nosense Tee Nosense Illogical Rhythmic Sounds Black  T- shirt",
+      price: 249000,
+      sizes: ["M", "L", "X-Large"],
       imgFront: ImgTshirt2Front.src,
       imgBack: ImgTshirt2Back.src,
-      link: "https://www.instagram.com/nosense_______cltv/",
+      link: "https://order.nosensecollective.com/products/nosense-illogical-rhythmic-sounds-black-t-shirt",
     },
     {
-      name: "Nosense Tee White",
-      price: 185000,
-      sizes: ["X", "XL", "XXL"],
+      name: "Nosense Illogical Rhythmic Sounds White  T- shirt",
+      price: 249000,
+      sizes: ["M", "L", "X-Large"],
       imgFront: ImgTshirt3Front.src,
       imgBack: ImgTshirt3Back.src,
-      link: "https://www.instagram.com/nosense_______cltv/",
+      link: "https://order.nosensecollective.com/products/nosense-illogical-rhythmic-sounds-white-t-shirt",
     },
-    {
-      name: "Nosense Listen to The Defening Silence Long Slive White",
-      price: 225000,
-      sizes: ["M", "X", "XL", "XXL"],
-      imgFront: ImgTshirt4Front.src,
-      imgBack: ImgTshirt4Front.src,
-      link: "https://www.instagram.com/nosense_______cltv/",
-    },
+    // {
+    //   name: "Nosense Listen to The Defening Silence Long Slive White",
+    //   price: 225000,
+    //   sizes: ["M", "X", "XL", "XXL"],
+    //   imgFront: ImgTshirt4Front.src,
+    //   imgBack: ImgTshirt4Front.src,
+    //   link: "https://www.instagram.com/nosense_______cltv/",
+    // },
   ];
   return (
     <>
