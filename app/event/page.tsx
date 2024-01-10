@@ -5,7 +5,6 @@ import ImgEventBanner1 from "@/assets/images/event_12_01_2024.png";
 import Image from "next/image";
 import ImgArrowLeft from "@/assets/images/arrow-left.svg";
 import "./style.scss";
-import { useEffect } from "react";
 
 const EventPage = () => {
   if (typeof window === "undefined") {
